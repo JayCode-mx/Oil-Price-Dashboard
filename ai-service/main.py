@@ -16,6 +16,10 @@ app.add_middleware(
 class DataInput(BaseModel):
     values: list[float]
 
+@app.get("/")
+def root():
+    return {"message": "AI Service Running 🚀"}
+
 @app.post("/detect")
 def detect_anomaly(data: DataInput):
     values = np.array(data.values)
