@@ -50,6 +50,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const buffer = new CircularBuffer(10);
 const axios = require("axios");
+const yahooFinance = require("yahoo-finance2").default;
 
 app.use(express.json());
 app.use(cors());
@@ -119,6 +120,23 @@ app.get("/analyze", async (req, res) => {
         res.status(500).json({ error: "AI service error" });
     }
 });
+
+// 🔥 GOLD PRICE FETCH
+setInterval(async () => {
+    try {
+        const result = await yahooFinance.quote("GC=F");
+
+        const price = result.regularMarketPrice;
+
+        buffer.add(price);
+
+        console.log("🥇 Gold Price:", price);
+    } catch (err) {
+        console.log("Error fetching gold:", err.message);
+    }
+}, 5000);
+
+
 
 app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server running on port ${PORT}`);
