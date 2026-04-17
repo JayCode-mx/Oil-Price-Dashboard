@@ -1,0 +1,4 @@
+{
+    "python.defaultInterpreterPath": ".\\ai-service\\.venv\\Scripts\\python.exe",
+    "css.lint.unknownAtRules": "ignore"
+}
