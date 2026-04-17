@@ -47,7 +47,7 @@ function movingAverage(data, windowSize) {
 const express = require("express");
 const cors = require("cors");
 const app = express();
-//const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const buffer = new CircularBuffer(10);
 const axios = require("axios");
 
@@ -120,6 +120,6 @@ app.get("/analyze", async (req, res) => {
     }
 });
 
-app.listen(5000, () => {
-    console.log("Server running on port 5000")
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Server running on port ${PORT}`);
 });
