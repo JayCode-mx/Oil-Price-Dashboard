@@ -262,7 +262,7 @@ app.get("/export", (req, res) => {
     res.send(text);
 });
 
-const PORT = 5000;
-app.listen(PORT, () => {
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, "0.0.0.0", () => {
     console.log(`Backend monitoring system running on port ${PORT}`);
 });
