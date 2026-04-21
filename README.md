@@ -12,6 +12,6 @@ So I built:
 Tech stack:
 React + Node.js + Tailwind + Render
 
-🔗 Live Demo: [https://jaycode-mx.github.io/Oil-Price-Dashboard/]
+🔗 Live Demo: [https://jaycode-mx.github.io/Real-Time-API-Monitoring-System/]
 
 Would love feedback 🙌
