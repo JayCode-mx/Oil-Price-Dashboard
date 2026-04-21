@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Real-Time-API-Monitoring-System/static/css/main.d6880c9f.css",
-    "main.js": "/Real-Time-API-Monitoring-System/static/js/main.fcb3f08b.js",
+    "main.css": "/Real-Time-API-Monitoring-System/static/css/main.27599ec0.css",
+    "main.js": "/Real-Time-API-Monitoring-System/static/js/main.fe8adfe0.js",
     "static/js/453.825386d9.chunk.js": "/Real-Time-API-Monitoring-System/static/js/453.825386d9.chunk.js",
     "index.html": "/Real-Time-API-Monitoring-System/index.html",
-    "main.d6880c9f.css.map": "/Real-Time-API-Monitoring-System/static/css/main.d6880c9f.css.map",
-    "main.fcb3f08b.js.map": "/Real-Time-API-Monitoring-System/static/js/main.fcb3f08b.js.map",
+    "main.27599ec0.css.map": "/Real-Time-API-Monitoring-System/static/css/main.27599ec0.css.map",
+    "main.fe8adfe0.js.map": "/Real-Time-API-Monitoring-System/static/js/main.fe8adfe0.js.map",
     "453.825386d9.chunk.js.map": "/Real-Time-API-Monitoring-System/static/js/453.825386d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6880c9f.css",
-    "static/js/main.fcb3f08b.js"
+    "static/css/main.27599ec0.css",
+    "static/js/main.fe8adfe0.js"
   ]
 }
